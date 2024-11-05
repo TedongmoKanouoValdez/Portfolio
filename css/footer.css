@@ -16,7 +16,6 @@
     --second-bg-color: #323946;
     --text-color: #fff;
     --main-color: #0ef;
-    --menu-color:  rgb(165, 158, 181);
 }
 
 /* html{
@@ -44,8 +43,7 @@ section{
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    /* background: var(--bg-color); */
-    background: var(--menu-color);
+    background: var(--bg-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -89,84 +87,51 @@ section{
     width: 35vw;
     animation: floatImage 4s ease-in-out infinite;
 }
-.footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 9%;
-    /* background: var(--second-bg-color); */
-    /* background: var(--menu-color); */
-    color: var(--text-color);
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 14px;
+    width: 100%;
 }
 
-.footer-nav {
-    display: flex;
-    gap: 2rem;
-    margin-bottom: 1rem;
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.footer-nav a {
-    color: var(--text-color);
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    font-weight: 500;
+.footer-nav a,
+.social-links a {
+    color: #4aa7f7;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
 }
 
-.footer-nav a:hover {
-    color: var(--main-color);
+.footer-nav a:hover,
+.social-links a:hover {
+    color: #fff;
 }
 
 .social-links {
-    display: flex;
-    gap: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.social-links a {
-    color: var(--text-color);
-    font-size: 1.6rem;
-    transition: color 0.3s ease;
-}
-
-.social-links a:hover {
-    color: var(--main-color);
+    margin: 10px 0;
 }
 
 .quote {
     font-style: italic;
-    font-size: 1.4rem;
-    margin: 1rem 0;
-    color: var(--text-color);
-    opacity: 0.8;
+    margin: 20px 0;
 }
 
-.footer-logo {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 0.5rem;
-    margin-top: 1rem;
+.brand p:first-child {
+    font-size: 24px;
+    font-weight: bold;
 }
 
-.footer-logo img {
-    width: 3rem; /* ajuste la taille du logo ici */
+.brand p:last-child {
+    margin-top: 5px;
+    color: #ccc;
 }
-
-.footer-logo p {
-    font-size: 1.2rem;
-    color: var(--text-color);
-}
-
-.copyright {
-    font-size: 1.5rem;
-    color: var(--text-color);
-    opacity: 0.6;
-    margin-top: 0.5rem;
-}
-
 @keyframes floatImage {
     0%{
         transform: translateY(0);
